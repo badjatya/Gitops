@@ -1,6 +1,6 @@
 {
   "name": "gitops",
-  "homepage": "https://badjatya.github.io/gitops",
+  "homepage": "https://badjatya.github.io/gitops/#/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
