@@ -20,17 +20,17 @@ const Card = () => {
         <img src={avatar_url} alt={name} />
         <div>
           <h4>{name}</h4>
-          <p>@{twitter_username || "john doe"}</p>
+          <p>@{twitter_username || "Not Mentioned"}</p>
         </div>
         <a href={html_url}>follow</a>
       </header>
-      <p className="bio">{bio}</p>
+      <p className="bio">{bio || "Not Mentioned"}</p>
       <div className="links">
         <p>
-          <MdBusiness></MdBusiness> {company}
+          <MdBusiness></MdBusiness> {company || "Not Mentioned"}
         </p>
         <p>
-          <MdLocationOn></MdLocationOn> {location || "earth"}
+          <MdLocationOn></MdLocationOn> {location || "Not Mentioned"}
         </p>
         <a href={`https://${blog}`}>
           <MdLink></MdLink>
