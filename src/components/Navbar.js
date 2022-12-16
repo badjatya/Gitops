@@ -6,10 +6,11 @@ const Navbar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user, isLoading } =
     useAuth0();
   const isUser = isAuthenticated && user;
+  console.log(user);
 
   return (
     <Wrapper>
-      {isUser && user.picture && <img src={user.picture} alt={user.name} />}
+      {/* {isUser && user.picture && <img src={user.picture} alt={user.name} />} */}
       {isUser && user.name && (
         <h4>
           Welcome, <strong>{user.name.toUpperCase()}</strong>
